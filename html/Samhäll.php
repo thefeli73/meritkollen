@@ -42,14 +42,6 @@ XXXX
 
 <?php
 include "include/settings.php";
-?>
-<!--
-XXXXXXXXXXXXXXX
-ÄMNES VAL LISTA
-XXXXXXXXXXXXXXX
--->
-
-<?php
 include "include/extraKurs.php";
 include "include/createCourse.php";
 
