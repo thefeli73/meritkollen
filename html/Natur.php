@@ -43,20 +43,12 @@ XXXX
 
 <?php
 include "include/settings.php";
-?>
-<!--
-XXXXXXXXXXXXXXX
-ÄMNES VAL LISTA
-XXXXXXXXXXXXXXX
--->
-    
-<?php
 include "include/extraKurs.php";
 ?>
 
-    
+
 	<form class="courses kurser">
-    
+
     <!--Engelska 5-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -76,10 +68,10 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Engelska 6-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -99,9 +91,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Historia 1a1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -121,9 +113,9 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Idrott och hälsa 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -143,11 +135,11 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
-        
+
+
+
+
+
     <!--Matematik 1c-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -167,10 +159,10 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Matematik 2c-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -190,9 +182,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Matematik 3c-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -212,10 +204,10 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Religionskunskap 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -235,11 +227,11 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
-        
+
+
+
+
+
     <!--Samhällskunskap 1b-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -259,10 +251,10 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Svenska 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -282,9 +274,9 @@ include "include/extraKurs.php";
 			</select>
             <a disabled class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Svenska 2-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -304,9 +296,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Svenska 3-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -326,10 +318,10 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Biologi 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -349,11 +341,11 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
-        
+
+
+
+
+
     <!--Moderna Språk 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -373,10 +365,10 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Fysik 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -396,10 +388,10 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Kemi 1	-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -419,9 +411,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Inriktning 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -441,9 +433,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Inriktning 2-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -463,9 +455,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Inriktning 3-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -485,9 +477,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Inriktning 4-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -507,9 +499,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Programfördjupning 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -529,9 +521,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Programfördjupning 2-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -551,9 +543,9 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
     <!--Individuellt val 1-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -573,10 +565,10 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
-        
+
+
+
+
     <!--Individuellt val 2-->
 		<div style="display:flex;">
         <li class="mdl-list__item mdl-list__item--two-line" style="overflow:visible;padding: 16px 24px 16px 16px;width:175px">
@@ -596,17 +588,17 @@ include "include/extraKurs.php";
 			</select>
             <a class="delete_row mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="margin:16px 5px">Ta Bort</a>
 		</div>
-        
-        
-        
+
+
+
 	</form>
     <a type="button" class="btn btn-primary btn-mini add_row" style="color:#fff;display:block; width:85%; margin:10px auto 0;" onClick="setTimeout(updateGrade(), 5000);">Lägg till Kurs</a>
 	<form onSubmit="return false;" style="display:table; margin:auto;">
     <h5>Meritpoäng:</h5>
 		<input class="meritpoint" style="width:29px; position:static;" value="0" type="number" step="0.5" min="0" max="2.5">
 	</form><br>
-		<span class="score_span" style="margin-left:0px;"></span> 
-   
+		<span class="score_span" style="margin-left:0px;"></span>
+
 
 </content>
 </div>
