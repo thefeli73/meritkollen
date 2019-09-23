@@ -62,7 +62,7 @@ createCourse("Svenska 3","sve3",100 , "");
 createCourse("Estetisk kommunikation","estkom",100 , "");
 createCourse("Konstarterna och samhället","konst",50 , "");
 createCourse("Inriktning 1","inr1",100 , "");
-createCourse("Inriktning 2","inr2",100 , "");
+createCourse("Inriktning 2","inr2",200 , "");
 createCourse("Inriktning 3","inr3",100 , "");
 createCourse("Programfördjupning 1","prof1",100 , "");
 createCourse("Programfördjupning 2","prof2",100 , "");
