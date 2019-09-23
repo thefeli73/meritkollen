@@ -51,12 +51,6 @@ XXXXXXXXXXXXXXX
 
 <?php
 include "include/extraKurs.php";
-?>
-
-	<form class="courses kurser">
-
-
-<?php
 include "include/createCourse.php";
 
 createCourse("Engelska 5","eng5",100 , "disabled");
@@ -84,17 +78,7 @@ createCourse("Programfördjupning 1","prof1",100 , "");
 createCourse("Programfördjupning 2","prof2",100 , "");
 createCourse("Individuellt val 1","indv1",100 , "");
 createCourse("Individuellt val 2","indv2",100 , "");
-  ?>
-
-	</form>
-    <a type="button" class="btn btn-primary btn-mini add_row" style="color:#fff;display:block; width:85%; margin:10px auto 0;" onClick="setTimeout(updateGrade(), 5000);">Lägg till Kurs</a>
-	<form onSubmit="return false;" style="display:table; margin:auto;">
-    <h5>Meritpoäng:</h5>
-		<input class="meritpoint" style="width:29px; position:static;" value="0" type="number" step="0.5" min="0" max="2.5">
-	</form><br>
-		<span class="score_span" style="margin-left:0px;"></span>
-
-
+?>
 
 </content>
 </div>
