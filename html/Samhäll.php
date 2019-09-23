@@ -78,6 +78,8 @@ createCourse("Programfördjupning 1","prof1",100 , "");
 createCourse("Programfördjupning 2","prof2",100 , "");
 createCourse("Individuellt val 1","indv1",100 , "");
 createCourse("Individuellt val 2","indv2",100 , "");
+
+include "createCourse_end.php";
 ?>
 
 </content>
