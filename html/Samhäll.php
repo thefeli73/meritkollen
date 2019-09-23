@@ -57,7 +57,7 @@ include "include/extraKurs.php";
 
 
 <?php
-include "include/createCourse.php"
+include "include/createCourse.php";
 
 createCourse("Engelska 5","eng5",100 , "disabled");
 createCourse("Engelska 6","eng6",100 , "");
