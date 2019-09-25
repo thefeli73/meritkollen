@@ -25,11 +25,11 @@ $(document).ready(function() {
 	$('form').change(function() {
 		raknaUtMeritvarde();
 	});
-	$('.add_row').live('click', function() {
+	$('.add_row').on('click', function() {
 		$('div.sample_row > div').clone().appendTo('form.courses');
 		raknaUtMeritvarde();
 	});
-	$('.delete_row').live('click', function() {
+	$('.delete_row').on('click', function() {
 		$(this).parent().slideUp(function() {
 			$(this).remove();
 			raknaUtMeritvarde();
@@ -65,17 +65,17 @@ function raknaUtMeritvarde() {
 	}
 	$('.score_span').html('');
 	if (totalPoints > 2400) {
-		$('.score_span').append('<div class="demo-card-square mdl-card mdl-shadow--16dp" style="text-align:left;width:260px; height:auto;margin:50px auto 0;"><div class="mdl-card__title"><h2 class="mdl-card__title-text" style="font-size:28px;">Ditt meritvärde är ' + totalScore + '</h2></div><div class="mdl-card__supporting-text">Ditt Snittbetyg av ' + totalPoints + ' Poäng (+100 poäng för Gymnasiearbete) ger meritvärdet: ' + totalScore + '<p style="color:#d50000;text-align:unset;font-weight:unset;">Du har över 2400 poäng och måste därför välja bort ' + (totalPoints - 2400) + ' poäng</p></div><div class="mdl-card__actions mdl-card--border"><a class="sparaBetyg mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Spara</a><a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="/">Till Startsidan</a></div></div>');
+		$('.score_span').append('<div class="demo-card-square mdl-card mdl-shadow--16dp" style="text-align:left;width:260px; height:auto;margin:50px auto 0;"><div class="mdl-card__title"><h2 class="mdl-card__title-text" style="font-size:28px;">Ditt meritvärde är ' + totalScore + '</h2></div><div class="mdl-card__supporting-text">Ditt Snittbetyg av ' + totalPoints + ' Poäng (+100 poäng för Gymnasiearbete) ger meritvärdet: ' + totalScore + '<p style="color:#d50000;text-align:unset;font-weight:unset;">Du har över 2400 poäng och måste därför välja bort ' + (totalPoints - 2400) + ' poäng</p></div><div class="mdl-card__actions mdl-card--border"><a onClick="sparaBetyg()" class="sparaBetyg mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Spara</a><a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="/">Till Startsidan</a></div></div>');
 	} else {
-		$('.score_span').append('<div class="demo-card-square mdl-card mdl-shadow--16dp" style="text-align:left;width:260px; height:auto;margin:50px auto 0;"><div class="mdl-card__title"><h2 class="mdl-card__title-text" style="font-size:28px;">Ditt meritvärde är ' + totalScore + '</h2></div><div class="mdl-card__supporting-text">Ditt Snittbetyg av ' + totalPoints + ' Poäng (+100 poäng för Gymnasiearbete) ger meritvärdet: ' + totalScore + '</div><div class="mdl-card__actions mdl-card--border"><a class="sparaBetyg mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Spara</a><a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="/">Till Startsidan</a></div></div>');
+		$('.score_span').append('<div class="demo-card-square mdl-card mdl-shadow--16dp" style="text-align:left;width:260px; height:auto;margin:50px auto 0;"><div class="mdl-card__title"><h2 class="mdl-card__title-text" style="font-size:28px;">Ditt meritvärde är ' + totalScore + '</h2></div><div class="mdl-card__supporting-text">Ditt Snittbetyg av ' + totalPoints + ' Poäng (+100 poäng för Gymnasiearbete) ger meritvärdet: ' + totalScore + '</div><div class="mdl-card__actions mdl-card--border"><a onClick="sparaBetyg()" class="sparaBetyg mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Spara</a><a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="/">Till Startsidan</a></div></div>');
 	}
-	//title set 
+	//title set
 	if (courseTitle === false) {
 		courseTitle = document.title;
 	}
 	var newDocTitle = courseTitle + ' - ' + totalScore;
 	document.title = newDocTitle;
-	
+
 	var urlLink = "?";
 	$('form.kurser').find('div').each(function(){
 		subjectScores = parseFloat($(this).find("select").val());

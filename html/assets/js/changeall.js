@@ -1,4 +1,4 @@
-$('.changeall').live('click', function(){
+$('.changeall').on('click', function(){
 	var grade;
 	var val;
 	if (document.getElementById('option-1').checked) {
@@ -20,7 +20,7 @@ $('.changeall').live('click', function(){
 		grade = "F";
 		val = 0;
 	}
-	
+
 	$('form.kurser').find('div').each(function(){
 		$('.select-dropdown').val(grade);
 		$('.grade').val(val);
