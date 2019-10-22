@@ -24,7 +24,7 @@ echo "
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
 <link rel='stylesheet' href='assets/css/main.min.css?v=201'>
-
+<script data-ad-client='ca-pub-5143923140938916' async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
 
 
 
