@@ -1,10 +1,5 @@
 <?php
 echo "
-<!--
-XXXXXX
-HEADER
-XXXXXX
--->
 <div id='hider' style='display:none;height: 100vh;position: fixed;width: 100vw;top: 0;background-color: rgba(85, 85, 85, 0.74);z-index: 4;'></div>
 <div id='popup' style='display:none;'>
   <div style='margin:30px;'>
@@ -22,11 +17,11 @@ $(document).ready(function() {
         $('#popup').delay(1000).fadeIn();
         $('#hider').delay(300).fadeIn();
     }
-	
-    $('body').click(function(e) 
+
+    $('body').click(function(e)
     {
-    	$('#popup').fadeOut(); 
-    	$('#hider').fadeOut(); 
+    	$('#popup').fadeOut();
+    	$('#hider').fadeOut();
         localStorage.setItem('popupInfo','sett')
     });
 });
