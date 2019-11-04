@@ -140,8 +140,9 @@ När jag började informera mig om Universiteter, antagningspoäng och meritvär
 <script src="assets/js/softscrollscript.js"></script>
 <script>
 if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('/sw.js');
+  window.addEventListener('load', function() {
+	navigator.serviceWorker.register('/sw.js');
+  });
 }
 </script>
 </body>

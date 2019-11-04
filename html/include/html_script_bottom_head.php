@@ -23,5 +23,10 @@ function partB(){
     $('select').material_select();
   });
 }
+if('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+	navigator.serviceWorker.register('/sw.js');
+  });
+}
 </script>
 ";
