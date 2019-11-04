@@ -1,5 +1,6 @@
 {
-    "name": "Meritv\u00e4rde",
+    "short_name": "Meritkollen",
+    "name": "Meritkollen",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
