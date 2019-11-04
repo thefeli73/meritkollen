@@ -134,15 +134,14 @@ När jag började informera mig om Universiteter, antagningspoäng och meritvär
 </div>
 	</header>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/material.min.js"></script>
 <script src="assets/js/loader.min.js"></script>
 <script src="assets/js/softscrollscript.js"></script>
 <script>
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/sw.js')
-           .then(function() { console.log("Service Worker Registered"); });
+           .register('/sw.js');
 }
 </script>
 </body>
