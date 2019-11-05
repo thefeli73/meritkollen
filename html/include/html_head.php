@@ -19,11 +19,12 @@ echo "
 
 
 
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' type='text/css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
-<link rel='stylesheet' href='assets/css/main.min.css'>
+<link rel='stylesheet' async href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' async href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' type='text/css'>
+<link rel='stylesheet' async href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' async href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+<link rel='stylesheet' async href='assets/css/main.min.css'>
+<script src='assets/js/modernizer-webp.js'></script>
 <script data-ad-client='ca-pub-5143923140938916' async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
 
 
