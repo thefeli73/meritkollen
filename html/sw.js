@@ -16,6 +16,7 @@ self.addEventListener('install', function(e) {
 		'/assets/css/main.min.css',
 		'/assets/img/tips.jpg ',
 		'/assets/img/background.jpg ',
+		'/assets/img/background85.webp ',
 		'/assets/img/favicon/manifest.json',
 		'/assets/img/favicon/android-chrome-192x192.png',
 		'/assets/img/favicon/favicon-32x32.png',

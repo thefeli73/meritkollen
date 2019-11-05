@@ -9,6 +9,7 @@ readfile("assets/js/loader.min.js");
 readfile("assets/js/calcscript.js");
 readfile("assets/js/changeall.js");
 readfile("assets/js/sparabetyg.js");
+readfile("assets/js/modernizer-webp.js");
 echo "
 $(document).ready(function() {
 	$('select').material_select();
