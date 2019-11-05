@@ -2,7 +2,7 @@
 echo "
 <script defer>
 ";
-readfile("https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js");
+readfile("https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js");
 readfile("https://code.getmdl.io/1.3.0/material.min.js");
 readfile("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js");
 readfile("assets/js/loader.min.js");

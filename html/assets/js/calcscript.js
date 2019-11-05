@@ -1,35 +1,12 @@
 $(document).ready(function() {
-	$('.select_programme').change(function() {
-		var myText = $(".select_programme option:selected").text();
-		var options = '<select class="grade" style="margin-left:20px;"><option value="0">IG<\/option><option value="10" selected>G<\/option><option value="15">VG<\/option><option value="20">MVG<\/option><\/select>';
-		$('.courses').html('')
-		$.each(json[myText], function(i, object) {
-			var row = null;
-			$.each(object, function(property, value) {
-				if (property == 'Subject') {
-					row = '<div><input type="text" value="' + value + '" style="width:200px;">';
-					//$('.courses').append('<input type="text" value="'+value+'" style="width:200px;">');
-				} else {
-					row = row + '<input type="text" class="points" value="' + value + '" style="width:100px; margin-left:20px">';
-					row = row + options;
-					row = row + '<a class="delete_row" style="margin-left:20px;">Ta bort rad<\/a><\/div>';
-					//$('.courses').append('<input type="text" class="score" value="'+value+'" style="width:100px; margin-left:20px">');
-					//$('.courses').append(options);
-					$('.courses').append(row);
-				}
-			});
-		});
-		$('.courses').append('');
-		$('.courses').append('');
-	});
 	$('form').change(function() {
 		raknaUtMeritvarde();
 	});
-	$('.add_row').on('click', function() {
+	$('.add_row').live('click', function() {
 		$('div.sample_row > div').clone().appendTo('form.courses');
 		raknaUtMeritvarde();
 	});
-	$('.delete_row').on('click', function() {
+	$('.delete_row').live('click', function() {
 		$(this).parent().slideUp(function() {
 			$(this).remove();
 			raknaUtMeritvarde();
