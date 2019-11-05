@@ -1,6 +1,6 @@
 <?php
 echo "
-<script>
+<script defer>
 ";
 readfile("https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js");
 readfile("https://code.getmdl.io/1.3.0/material.min.js");
@@ -9,6 +9,7 @@ readfile("assets/js/loader.min.js");
 readfile("assets/js/calcscript.js");
 readfile("assets/js/changeall.js");
 readfile("assets/js/sparabetyg.js");
+readfile("assets/js/smallScript.js");
 echo "
 $(document).ready(function() {
 	$('select').material_select();
@@ -21,11 +22,6 @@ function updateGrade() {
 function partB(){
 	$(document).ready(function() {
     $('select').material_select();
-  });
-}
-if('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-	navigator.serviceWorker.register('/sw.js');
   });
 }
 </script>

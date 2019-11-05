@@ -25,7 +25,7 @@
 <script async src="assets/js/modernizer-webp.js"></script>
 <link rel="stylesheet" async href="assets/css/main.min.css">
 <link rel='preload' async href='assets/img/background85.webp' as='image' type='image/webp'>
-<link disabled id="test" rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<link disabled class="lateLoad" rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 <!--<script data-ad-client="ca-pub-5143923140938916" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 -->
 
@@ -141,15 +141,6 @@ När jag började informera mig om Universiteter, antagningspoäng och meritvär
 <script defer src="assets/js/material.min.js"></script>
 <script defer src="assets/js/loader.min.js"></script>
 <script defer src="assets/js/softscrollscript.js"></script>
-<script defer>
-if('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-	navigator.serviceWorker.register('/sw.js');
-  });
-}
-window.addEventListener('load', function() {
-  $("#test").prop('disabled', false);
-});
-</script>
+<script defer src="assets/js/smallscript.js"></script>
 </body>
 </html>
