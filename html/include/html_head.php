@@ -16,9 +16,6 @@ echo "
 <meta property='og:description' content='Beräkna ditt gymnasie meritvärde inför univeritet eller högskola'>
 <meta name='title' content='Räkna ut ditt meritvärde'>
 
-<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-<link rel='preconnect' href='https://adservice.google.com' crossorigin>
-<link rel='preconnect' href='https://adservice.google.se' crossorigin>
 <link rel='preconnect' href='https://cdnjs.cloudflare.com' crossorigin>
 <link rel='preconnect' href='https://pagead2.googlesyndication.com' crossorigin>
 <script async src='assets/js/modernizer-webp.js'></script>
