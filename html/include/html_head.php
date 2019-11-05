@@ -16,12 +16,14 @@ echo "
 <meta property='og:description' content='Beräkna ditt gymnasie meritvärde inför univeritet eller högskola'>
 <meta name='title' content='Räkna ut ditt meritvärde'>
 
-
-
-
+<link rel='preconnect' href='https://fonts.gstatic.com'>
+<link rel='preconnect' href='https://adservice.google.com'>
+<link rel='preconnect' href='https://adservice.google.se'>
+<link rel='preconnect' href='https://cdnjs.cloudflare.com'>
+<link rel='preconnect' href='https://pagead2.googlesyndication.com'>
 <script async src='assets/js/modernizer-webp.js'></script>
 <link rel='stylesheet' async href='assets/css/main.min.css'>
-<link rel='preload' async href='assets/img/background85.webp'>
+<link rel='preload' async href='assets/img/background85.webp' as='image' type='image/webp'>
 <link rel='stylesheet' async href='https://fonts.googleapis.com/css?family=Roboto&display=swap'>
 <link rel='stylesheet' defer href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 <link rel='stylesheet' defer href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
