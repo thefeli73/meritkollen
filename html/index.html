@@ -17,20 +17,17 @@
 <meta property="og:description" content="Beräkna ditt gymnasie meritvärde inför univeritet eller högskola">
 <meta name="title" content="Räkna ut ditt meritvärde">
 
-<link rel='preconnect' href='https://fonts.gstatic.com'>
-<link rel='preconnect' href='https://adservice.google.com'>
-<link rel='preconnect' href='https://adservice.google.se'>
-<link rel='preconnect' href='https://cdnjs.cloudflare.com'>
-<link rel='preconnect' href='https://pagead2.googlesyndication.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link rel='preconnect' href='https://adservice.google.com' crossorigin>
+<link rel='preconnect' href='https://adservice.google.se' crossorigin>
+<link rel='preconnect' href='https://cdnjs.cloudflare.com' crossorigin>
+<link rel='preconnect' href='https://pagead2.googlesyndication.com' crossorigin>
 <script async src="assets/js/modernizer-webp.js"></script>
 <link rel="stylesheet" async href="assets/css/main.min.css">
 <link rel='preload' async href='assets/img/background85.webp' as='image' type='image/webp'>
-<link rel="stylesheet" async href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-<link rel="stylesheet" defer href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-<script data-ad-client="ca-pub-5143923140938916" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<link disabled id="test" rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<!--<script data-ad-client="ca-pub-5143923140938916" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
 
 
 
@@ -140,16 +137,19 @@ När jag började informera mig om Universiteter, antagningspoäng och meritvär
 </div>
 	</header>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="assets/js/material.min.js"></script>
-<script src="assets/js/loader.min.js"></script>
-<script src="assets/js/softscrollscript.js"></script>
-<script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script defer src="assets/js/material.min.js"></script>
+<script defer src="assets/js/loader.min.js"></script>
+<script defer src="assets/js/softscrollscript.js"></script>
+<script defer>
 if('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
 	navigator.serviceWorker.register('/sw.js');
   });
 }
+window.addEventListener('load', function() {
+  $("#test").prop('disabled', false);
+});
 </script>
 </body>
 </html>
