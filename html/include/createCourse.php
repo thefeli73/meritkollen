@@ -7,9 +7,9 @@ function createCourse($dname, $nameId, $points, $disabled) {
   }
   echo "
 <div style='display:flex;'>
-	<li class='mdl-list__item mdl-list__item--two-line' style='overflow:visible;padding: 16px 24px 16px 16px;width:175px'>
+	<li id='$nameId' class='mdl-list__item mdl-list__item--two-line' style='overflow:visible;padding: 16px 24px 16px 16px;width:175px'>
 		<span class='mdl-list__item-primary-content'>
-			<span id='$nameId'>$dname</span>
+			<span>$dname</span>
 			<span class='points mdl-list__item-sub-title' value=''+points+''>$points Poäng</span>
 		</span>
 	</li>
