@@ -25,6 +25,8 @@ self.addEventListener('install', function(e) {
 		'/assets/js/softscrollscript.js',
 		'/assets/js/loader.min.js',
 		'/assets/js/material.min.js',
+		'/assets/js/smallScript.js',
+		'/assets/js/modernizer-webp.js',
 		'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js',
 		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css',
 		'https://fonts.googleapis.com/icon?family=Material+Icons',
