@@ -17,12 +17,12 @@ $(document).ready(function() {
 
 function updateGrade() {
 	$('select').material_select('destroy');
-	window.setTimeout(partB,50);
+	window.setTimeout(partB,0);
 }
 function partB(){
 	$(document).ready(function() {
-    $('select').material_select();
-  });
+    	$('select').material_select();
+  	});
 }
 </script>
 ";
