@@ -5,6 +5,7 @@
 <title>Ekonomi</title>
 
 <meta name="keywords" content="Ekonomi,Ekonomiprogrammet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
+<link rel="canonical" href="https://meritkollen.se/Ekonomi">
 <?php
 include "include/html_head.php";
 ?>

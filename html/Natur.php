@@ -5,6 +5,7 @@
 <title>Natur</title>
 
 <meta name="keywords" content="natur,Naturvetenskaps­programmet,Naturvetenskapliga,programmet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
+<link rel="canonical" href="https://meritkollen.se/Natur">
 <?php
 include "include/html_head.php";
 ?>

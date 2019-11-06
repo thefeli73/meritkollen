@@ -5,6 +5,7 @@
 <title>Estet</title>
 
 <meta name="keywords" content="estet,Estetiska,programmet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
+<link rel="canonical" href="https://meritkollen.se/Estet">
 <?php
 include "include/html_head.php";
 ?>

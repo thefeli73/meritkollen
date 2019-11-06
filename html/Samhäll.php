@@ -5,6 +5,7 @@
 <title>Samhäll</title>
 
 <meta name="keywords" content="samhäll,Samhällsprogrammet,samhällsvetenskapsprogrammet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
+<link rel="canonical" href="https://meritkollen.se/Samhäll">
 <?php
 include "include/html_head.php";
 ?>
