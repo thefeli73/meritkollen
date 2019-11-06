@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Teknik</title>
+
 <meta name="keywords" content="teknik,teknikprogrammet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
 <?php
 include "include/html_head.php";
@@ -11,9 +12,8 @@ include "include/html_head.php";
 
 <body>
 
-
 <header class="parallaxHeader" id="pageContent">
-<h1 id="bannerTitle" class="textCenter animate-bottom">Teknik</h1>
+<h1 class="bannerTitle animate-bottom">Teknik</h1>
 <!-- tillbaka knapp -->
 <a class="backKnapp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="/">
   <i class="material-icons">home</i>

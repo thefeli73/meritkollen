@@ -13,7 +13,7 @@ include "include/html_head.php";
 <body>
 
 <header class="parallaxHeader" id="pageContent">
-<h1 id="bannerTitle" class="textCenter animate-bottom">Natur</h1>
+<h1 class="bannerTitle animate-bottom">Natur</h1>
 <!-- tillbaka knapp -->
 <a class="backKnapp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="/">
   <i class="material-icons">home</i>
