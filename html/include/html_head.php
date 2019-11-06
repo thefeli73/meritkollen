@@ -4,7 +4,7 @@ echo "
 
 <meta http-equiv='content-language' content='sv-SE'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>
-<meta name='description' content='Beräkna ditt gymnasie meritvärde inför univeritet eller högskola'>
+<meta name='description' content='Beräkna ditt meritvärde inför univeritet eller högskola'>
 <meta name='author' content='Felix Schulze'>
 <meta HTTP-EQUIV='CACHE-CONTROL' CONTENT='public'>
 
