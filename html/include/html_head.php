@@ -11,8 +11,9 @@ echo "
 
 
 <meta property='og:type' content='website'>
-<meta property='og:site_name' content='meritkollen.se'>
+<meta property='og:site_name' content='Meritkollen'>
 <meta property='og:title' content='Räkna ut meritvärde'>
+<meta property='og:url' content='https://meritkollen.se'>
 <meta property='og:description' content='Beräkna ditt gymnasie meritvärde inför univeritet eller högskola'>
 <meta name='title' content='Räkna ut ditt meritvärde'>
 
