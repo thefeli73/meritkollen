@@ -14,6 +14,7 @@ include "include/html_head.php";
 
 <header class="parallaxHeader" id="pageContent">
 <h1 class="bannerTitle animate-bottom">Samhäll</h1>
+<h5 class="bannerTitle textCenter animate-bottom" style="background-color:unset;">Meritkalkylatorn för Samhällsvetenskapsprogrammet</h5>
 <!-- tillbaka knapp -->
 <a class="backKnapp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="/">
   <i class="material-icons">home</i>

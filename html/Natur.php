@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Natur</title>
 
-<meta name="keywords" content="natur,Naturvetenskapliga,programmet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
+<meta name="keywords" content="natur,Naturvetenskaps­programmet,Naturvetenskapliga,programmet,meritkollen,meritkalkylator,merit kalkylator,merit poäng,meritpoäng,kalkylator,meritvärde,njudungsgymnasiet,högskola,universitet,gymnasiet,högskolförberedande,program">
 <?php
 include "include/html_head.php";
 ?>
@@ -14,6 +14,7 @@ include "include/html_head.php";
 
 <header class="parallaxHeader" id="pageContent">
 <h1 class="bannerTitle animate-bottom">Natur</h1>
+<h5 class="bannerTitle textCenter animate-bottom" style="background-color:unset;">Meritkalkylatorn för Naturvetenskaps­programmet</h5>
 <!-- tillbaka knapp -->
 <a class="backKnapp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="/">
   <i class="material-icons">home</i>
