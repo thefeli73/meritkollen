@@ -1,8 +1,4 @@
 // JavaScript Document
-$('.sparaBetyg').on('click', function() {
-	sparaBetyg();
-	console.log("lol")
-});
 function sparaBetyg() {
 	var urlLink = "?";
 	$('form.kurser').find('div').each(function(){
