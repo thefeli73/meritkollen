@@ -19,12 +19,12 @@ echo "
 
 <link rel='preconnect' href='https://cdnjs.cloudflare.com' crossorigin>
 <link rel='preconnect' href='https://pagead2.googlesyndication.com' crossorigin>
-<script async src='assets/js/modernizer-webp.js'></script>
-<link rel='preload' async href='assets/img/background85.webp' as='image' type='image/webp'>
+<script async src='js/modernizer-webp.js'></script>
+<link rel='preload' async href='img/background85.webp' as='image' type='image/webp'>
 <link disabled class='lateLoader' rel='stylesheet' defer href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 <link rel='stylesheet' defer href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
 <script data-ad-client='ca-pub-5143923140938916' defer src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
-<link rel='stylesheet' async href='assets/css/main.min.css'>
+<link rel='stylesheet' async href='css/main.min.css'>
 
 <!--[if lt IE 9]>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js'></script>
@@ -36,17 +36,17 @@ echo "
   FAVICON
   XXXXXXX
   -->
-<link rel='apple-touch-icon' sizes='180x180' href='assets/img/favicon/apple-touch-icon.png'>
-<link rel='icon' type='image/png' href='assets/img/favicon/favicon-32x32.png' sizes='32x32'>
-<link rel='icon' type='image/png' href='assets/img/favicon/favicon-16x16.png' sizes='16x16'>
-<link rel='manifest' href='assets/img/favicon/manifest.json'>
-<link rel='mask-icon' href='assets/img/favicon/safari-pinned-tab.svg' color='#2b5797'>
-<link rel='shortcut icon' href='assets/img/favicon/favicon.ico'>
+<link rel='apple-touch-icon' sizes='180x180' href='img/favicon/apple-touch-icon.png'>
+<link rel='icon' type='image/png' href='img/favicon/favicon-32x32.png' sizes='32x32'>
+<link rel='icon' type='image/png' href='img/favicon/favicon-16x16.png' sizes='16x16'>
+<link rel='manifest' href='img/favicon/manifest.json'>
+<link rel='mask-icon' href='img/favicon/safari-pinned-tab.svg' color='#2b5797'>
+<link rel='shortcut icon' href='img/favicon/favicon.ico'>
 <meta name='apple-mobile-web-app-title' content='Meritv&auml;rde'>
 <meta name='application-name' content='Meritv&auml;rde'>
 <meta name='msapplication-TileColor' content='#2b5797'>
-<meta name='msapplication-TileImage' content='assets/img/favicon/mstile-144x144.png'>
-<meta name='msapplication-config' content='assets/img/favicon/browserconfig.xml'>
+<meta name='msapplication-TileImage' content='img/favicon/mstile-144x144.png'>
+<meta name='msapplication-config' content='img/favicon/browserconfig.xml'>
 <meta name='theme-color' content='#27233a'>
 
 

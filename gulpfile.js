@@ -6,11 +6,11 @@
 var settings = {
 	clean: true,
 	scripts: true,
-	polyfills: false,
+	polyfills: true,
 	styles: true,
 	svgs: true,
 	copy: true,
-	reload: false
+	reload: true
 };
 
 
@@ -298,6 +298,6 @@ exports.default = series(
 // gulp watch
 exports.watch = series(
 	exports.default,
-	startServer,
+	//startServer,
 	watchSource
 );
