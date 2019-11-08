@@ -6,11 +6,11 @@
 var settings = {
 	clean: true,
 	scripts: true,
-	polyfills: true,
+	polyfills: false,
 	styles: true,
 	svgs: true,
 	copy: true,
-	reload: true
+	reload: false
 };
 
 
@@ -69,6 +69,7 @@ var lazypipe = require('lazypipe');
 var rename = require('gulp-rename');
 var header = require('gulp-header');
 var package = require('./package.json');
+var hashsrc = require("gulp-hash-src");
 
 // Scripts
 var jshint = require('gulp-jshint');
@@ -237,6 +238,12 @@ var copyFiles = function (done) {
 
 };
 
+// updates version in all assets
+var updateAssetVersion = function (done) {
+	return src('src/copy/**/*.{php,html}')
+		.pipe(hashsrc({build_dir:paths.input,src_path:"/",hash_len:"6",query_name:"v"}))
+		.pipe(dest(paths.output));
+};
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -278,6 +285,7 @@ var watchSource = function (done) {
 exports.default = series(
 	cleanDist,
 	parallel(
+		updateAssetVersion,
 		buildScripts,
 		lintScripts,
 		buildStyles,
