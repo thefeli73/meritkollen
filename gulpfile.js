@@ -116,7 +116,7 @@ var jsTasks = lazypipe()
 	.pipe(header, banner.main, {package: package})
 	.pipe(optimizejs)
 	.pipe(dest, paths.scripts.output)
-	.pipe(rename, {suffix: '.min'})
+	//.pipe(rename, {suffix: '.min'})
 	.pipe(uglify)
 	.pipe(optimizejs)
 	.pipe(header, banner.main, {package: package})
@@ -201,7 +201,7 @@ var buildStyles = function (done) {
 		]))
 		.pipe(header(banner.main, {package: package}))
 		.pipe(dest(paths.styles.output))
-		.pipe(rename({suffix: '.min'}))
+		//.pipe(rename({suffix: '.min'}))
 		.pipe(postcss([
 			minify({
 				discardComments: {
@@ -286,12 +286,12 @@ var watchSource = function (done) {
 exports.default = series(
 	cleanDist,
 	parallel(
-		updateAssetVersion,
 		buildScripts,
 		lintScripts,
 		buildStyles,
 		buildSVGs,
-		copyFiles
+		copyFiles,
+		updateAssetVersion
 	)
 );
 

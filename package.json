@@ -34,6 +34,7 @@
 		"gulp-flatmap": "^1.0.2",
 		"gulp-hasher": "^0.1.0",
 		"gulp-header": "^2.0.5",
+		"gulp-htmlmin": "^5.0.1",
 		"gulp-jshint": "^2.1.0",
 		"gulp-optimize-js": "^1.1.0",
 		"gulp-postcss": "^8.0.0",
@@ -41,6 +42,7 @@
 		"gulp-sass": "^4.0.2",
 		"gulp-svgmin": "^2.1.0",
 		"gulp-terser": "^1.1.7",
+		"gulp-usemin": "^0.3.30",
 		"jshint": "^2.9.6",
 		"jshint-stylish": "^2.2.1",
 		"lazypipe": "^1.0.1"

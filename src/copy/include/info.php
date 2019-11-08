@@ -5,7 +5,7 @@ echo "
   <div style='margin:30px;'>
   <h1>Tips</h1><br>
   <h5>Glömt bort vilken kurs som innehåller vad? Håll muspekaren över en icke standard kurs för att se mer info.</h5><br><br>
-  <img src='img/tips.jpg' width='100%' height='auto' alt='Tips' style='max-width:450px; margin:auto; display:block;'/>
+  <img src='/img/tips.jpg' width='100%' height='auto' alt='Tips' style='max-width:450px; margin:auto; display:block;'/>
 </div>
 </div>
 <!--popup-->
