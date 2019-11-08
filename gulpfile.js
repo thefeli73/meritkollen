@@ -35,7 +35,7 @@ var paths = {
 		output: 'dist/svg/'
 	},
 	copy: {
-		input: 'src/copy/**/*',
+		input: ['src/**/*', '!src/js/**', '!src/css/**'],
 		output: 'dist/'
 	},
 	reload: './dist/'
@@ -240,10 +240,17 @@ var copyFiles = function (done) {
 
 // updates version in all assets
 var updateAssetVersion = function (done) {
-	return src('src/**/*.{php,html,css}')
-		.pipe(hashsrc({build_dir:paths.input,src_path:"/",hash_len:"6",query_name:"v"}))
-		.pipe(hashsrc({build_dir:paths.input,src_path:"/",hash_len:"6",query_name:"v",exts:[".json"]}))
+	return src('src/**/*.{php,html}')
+		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v"}))
+		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json"]}))
 		.pipe(dest(paths.output));
+};
+
+// updates version in all assets
+var updateCssVersion = function (done) {
+	return src(paths.styles.input)
+		.pipe(hashsrc({build_dir:paths.output,src_path:'src',hash_len:"6",query_name:"v"}))
+		.pipe(dest(paths.styles.output));
 };
 // Watch for changes to the src directory
 var startServer = function (done) {
@@ -286,13 +293,14 @@ var watchSource = function (done) {
 exports.default = series(
 	cleanDist,
 	parallel(
+		copyFiles,
 		buildScripts,
 		lintScripts,
 		buildStyles,
-		buildSVGs,
-		copyFiles,
-		updateAssetVersion
-	)
+		buildSVGs
+	),
+	updateAssetVersion,
+	updateCssVersion,
 );
 
 // Watch and reload
