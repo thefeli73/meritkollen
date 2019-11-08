@@ -252,6 +252,13 @@ var updateCssVersion = function (done) {
 		.pipe(hashsrc({build_dir:paths.output,src_path:'src',hash_len:"6",query_name:"v"}))
 		.pipe(dest(paths.styles.output));
 };
+
+// updates version in all assets
+var updateCssVersion = function (done) {
+	return src(paths.styles.input)
+		.pipe(hashsrc({build_dir:paths.output,src_path:'src',hash_len:"6",query_name:"v"}))
+		.pipe(dest(paths.styles.output));
+};
 // Watch for changes to the src directory
 var startServer = function (done) {
 
