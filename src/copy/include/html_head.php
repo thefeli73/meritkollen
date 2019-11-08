@@ -24,7 +24,7 @@ echo "
 <link disabled class='lateLoader' rel='stylesheet' defer href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 <link rel='stylesheet' defer href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
 <script data-ad-client='ca-pub-5143923140938916' defer src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
-<link rel='stylesheet' async href='css/main.min.css'>
+<link rel='stylesheet' async href='css/main.css'>
 
 <!--[if lt IE 9]>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js'></script>

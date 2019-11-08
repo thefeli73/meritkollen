@@ -240,8 +240,9 @@ var copyFiles = function (done) {
 
 // updates version in all assets
 var updateAssetVersion = function (done) {
-	return src('src/copy/**/*.{php,html}')
+	return src('src/copy/**/**/*.{php,html}')
 		.pipe(hashsrc({build_dir:paths.input,src_path:"/",hash_len:"6",query_name:"v"}))
+		.pipe(hashsrc({build_dir:paths.input,src_path:"/",hash_len:"6",query_name:"v",exts:[".json"]}))
 		.pipe(dest(paths.output));
 };
 // Watch for changes to the src directory
