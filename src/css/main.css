@@ -8037,7 +8037,7 @@ body {
 
 @media screen and (max-width:450px) {
     .marginAuto {
-        margin-bottom: 0px!important;
+        margin-bottom: 0!important;
         width: 100%!important;
         border-radius: 2px 2px 0 0;
     }

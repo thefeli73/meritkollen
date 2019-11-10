@@ -199,16 +199,12 @@ var buildStyles = function (done) {
 				remove: true
 			})
 		]))
-		.pipe(header(banner.main, {package: package}))
-		.pipe(dest(paths.styles.output))
 		//.pipe(rename({suffix: '.min'}))
 		.pipe(postcss([
-			minify({
-				discardComments: {
-					removeAll: true
-				}
-			})
+			minify()
 		]))
+		.pipe(header(banner.main, {package: package}))
+		.pipe(hashsrc({build_dir:paths.output,src_path:'src',hash_len:"6",query_name:"v"}))
 		.pipe(dest(paths.styles.output));
 
 };
@@ -246,19 +242,6 @@ var updateAssetVersion = function (done) {
 		.pipe(dest(paths.output));
 };
 
-// updates version in all assets
-var updateCssVersion = function (done) {
-	return src(paths.styles.input)
-		.pipe(hashsrc({build_dir:paths.output,src_path:'src',hash_len:"6",query_name:"v"}))
-		.pipe(dest(paths.styles.output));
-};
-
-// updates version in all assets
-var updateCssVersion = function (done) {
-	return src(paths.styles.input)
-		.pipe(hashsrc({build_dir:paths.output,src_path:'src',hash_len:"6",query_name:"v"}))
-		.pipe(dest(paths.styles.output));
-};
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -303,11 +286,10 @@ exports.default = series(
 		copyFiles,
 		buildScripts,
 		lintScripts,
-		buildStyles,
 		buildSVGs
 	),
+	buildStyles,
 	updateAssetVersion,
-	updateCssVersion,
 );
 
 // Watch and reload
