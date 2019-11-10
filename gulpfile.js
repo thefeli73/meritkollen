@@ -22,9 +22,9 @@ var paths = {
 	input: 'src/',
 	output: 'dist/',
 	scripts: {
-		input: 'src/js/*',
+		input: 'src/**/*.js',
 		polyfills: '.polyfill.js',
-		output: 'dist/js/'
+		output: 'dist/'
 	},
 	styles: {
 		input: 'src/css/**/*.{scss,sass,css}',
@@ -128,6 +128,10 @@ var buildScripts = function (done) {
 
 	// Run tasks on script files
 	return src(paths.scripts.input)
+		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".js"],
+			regex:/\s*(?:(")([^"]*)|(')([^']*))/ig,
+			analyze: function analyze(match){return {prefix: "'",link:match[4],suffix: ''};}
+		}))
 		.pipe(flatmap(function(stream, file) {
 
 			// If the file is a directory
@@ -239,15 +243,6 @@ var updateAssetVersion = function (done) {
 		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json"]}))
 		.pipe(dest(paths.output));
 };
-var updateSWVersion = function (done) {
-	return src('src/sw.js')
-		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",
-			regex:/\s*(?:(")([^"]*)|(')([^']*))/ig,
-			analyze: function analyze(match){return {prefix: "'",link:match[4],suffix: ''};}
-		}))
-		.pipe(dest(paths.output));
-};
-
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -296,7 +291,6 @@ exports.default = series(
 	),
 	buildStyles,
 	updateAssetVersion,
-	updateSWVersion
 );
 
 // Watch and reload
