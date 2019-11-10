@@ -285,12 +285,12 @@ exports.default = series(
 	cleanDist,
 	parallel(
 		copyFiles,
-		buildScripts,
 		lintScripts,
 		buildSVGs
 	),
 	buildStyles,
 	updateAssetVersion,
+	buildScripts,
 );
 
 // Watch and reload
