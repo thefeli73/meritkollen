@@ -128,7 +128,7 @@ var buildScripts = function (done) {
 
 	// Run tasks on script files
 	return src(paths.scripts.input)
-		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".js"],
+		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json",".webp",".jpg",".css",".png",".ico",".js"],
 			regex:/\s*(?:(")([^"]*)|(')([^']*))/ig,
 			analyze: function analyze(match){return {prefix: "'",link:match[4],suffix: ''};}
 		}))
