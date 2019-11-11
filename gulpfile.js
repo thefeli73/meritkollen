@@ -244,12 +244,13 @@ var updateAssetVersion = function (done) {
 		.pipe(dest(paths.output));
 };
 // updates version in SW
-var updateSWVersion = function (done) {
+var buildSW = function (done) {
 	return src('src/sw.js')
 		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json",".webp",".jpg",".css",".png",".ico",".js"],
 			regex:/\s*(?:(")([^"]*)|(')([^']*))/ig,
 			analyze: function analyze(match){return {prefix: "'",link:match[4],suffix: ''};}
 		}))
+		.pipe(jsTasks())
 		.pipe(dest(paths.output));
 };
 // Watch for changes to the src directory
@@ -298,9 +299,9 @@ exports.default = series(
 		buildSVGs
 	),
 	buildStyles,
-	updateAssetVersion,
 	buildScripts,
-	updateSWVersion,
+	updateAssetVersion,
+	buildSW,
 );
 
 // Watch and reload

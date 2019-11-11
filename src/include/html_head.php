@@ -45,8 +45,8 @@ echo '
 <meta name="apple-mobile-web-app-title" content="Meritv&auml;rde">
 <meta name="application-name" content="Meritv&auml;rde">
 <meta name="msapplication-TileColor" content="#2b5797">
-<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
-<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+<meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
 <meta name="theme-color" content="#27233a">
 
 
