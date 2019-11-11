@@ -14,7 +14,6 @@ self.addEventListener('install', function(e) {
 		'/Teknik',
 		'/Kontakt',
 		'/css/main.css',
-		'/img/tips.jpg',
 		'/img/background.jpg',
 		'/img/background85.webp',
 		'/img/favicon/manifest.json',
