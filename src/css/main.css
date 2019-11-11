@@ -7948,16 +7948,6 @@ h5 {
     z-index: 5
 }
 
-#loader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url(/img/loader.gif) center no-repeat #fff
-}
-
 .no-webp body {
     background-image: url(/img/background.jpg);
 }
@@ -7972,7 +7962,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     position: relative;
     background-color: #27233a
 }
@@ -8009,18 +7999,6 @@ body {
 ::-webkit-scrollbar-button {
     width: 0;
     height: 0
-}
-
-.amazonAdDiv {
-    background: url(/img/disableAdblock.jpg) center no-repeat;
-    background-size: contain;
-    min-height: 200px
-}
-
-.amzn-native-container {
-    padding: 10px;
-    background: #e6e6e6;
-    max-width: none!important
 }
 
 #popup {
