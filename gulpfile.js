@@ -22,9 +22,9 @@ var paths = {
 	input: 'src/',
 	output: 'dist/',
 	scripts: {
-		input: 'src/**/*.js',
+		input: 'src/js/*.js',
 		polyfills: '.polyfill.js',
-		output: 'dist/'
+		output: 'dist/js'
 	},
 	styles: {
 		input: 'src/css/**/*.{scss,sass,css}',
@@ -243,6 +243,15 @@ var updateAssetVersion = function (done) {
 		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json"]}))
 		.pipe(dest(paths.output));
 };
+// updates version in SW
+var updateSWVersion = function (done) {
+	return src('src/sw.js')
+		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json",".webp",".jpg",".css",".png",".ico",".js"],
+			regex:/\s*(?:(")([^"]*)|(')([^']*))/ig,
+			analyze: function analyze(match){return {prefix: "'",link:match[4],suffix: ''};}
+		}))
+		.pipe(dest(paths.output));
+};
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -291,6 +300,7 @@ exports.default = series(
 	buildStyles,
 	updateAssetVersion,
 	buildScripts,
+	updateSWVersion,
 );
 
 // Watch and reload
