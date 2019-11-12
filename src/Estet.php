@@ -82,8 +82,6 @@ include "include/createCourse_end.php";
 </header>
 <?php
 include "include/html_script_bottom_head.php";
-
-include "include/info.php";
 ?>
 </body>
 </html>

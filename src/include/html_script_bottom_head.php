@@ -1,16 +1,15 @@
 <?php
 echo "
+<script src='/js/jquery.js'></script>
+<script src='/js/material.js'></script>
+<script src='/js/materialize.js'></script>
+<script defer src='/js/calcscript.js'></script>
+<script defer src='/js/changeall.js'></script>
+<script defer src='/js/sparabetyg.js'></script>
+<script defer src='/js/smallScript.js'></script>
 <script defer>
-";
-readfile("https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js");
-readfile("https://code.getmdl.io/1.3.0/material.min.js");
-readfile("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js");
-readfile("js/calcscript.js");
-readfile("js/changeall.js");
-readfile("js/sparabetyg.js");
-readfile("js/smallScript.js");
-echo "
 $(document).ready(function() {
+	laddaBetyg();
 	$('select').material_select();
 });
 
