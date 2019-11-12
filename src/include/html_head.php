@@ -17,10 +17,10 @@ echo '
 <meta property="og:description" content="Beräkna ditt gymnasie meritvärde inför univeritet eller högskola">
 <meta name="title" content="Räkna ut ditt meritvärde">
 
+<link rel="preload" async href="/img/background85.webp" as="image" type="image/webp">
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <script async src="/js/modernizer-webp.js"></script>
-<link rel="preload" async href="/img/background85.webp" as="image" type="image/webp">
 <link disabled class="lateLoader" rel="stylesheet" defer href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 <script data-ad-client="ca-pub-5143923140938916" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
