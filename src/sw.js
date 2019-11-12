@@ -19,6 +19,7 @@ self.addEventListener('install', function(e) {
 		'/img/background85.webp',
 		'/img/favicon/manifest.json',
 		'/img/favicon/android-chrome-192x192.png',
+		'/img/favicon/android-chrome-512x512.png',
 		'/img/favicon/favicon-32x32.png',
 		'/img/favicon/favicon-16x16.png',
 		'/img/favicon/favicon.ico',
