@@ -1,4 +1,4 @@
-;(function() {
+(function() {
 "use strict";
 
 /**
@@ -2220,7 +2220,7 @@ MaterialSnackbar.prototype.cleanup_ = function () {
     setTimeout(function () {
         this.element_.setAttribute('aria-hidden', 'true');
         this.textElement_.textContent = '';
-        if (!Boolean(this.actionElement_.getAttribute('aria-hidden'))) {
+        if (!this.actionElement_.getAttribute('aria-hidden')) {
             this.setActionHidden_(true);
             this.actionElement_.textContent = '';
             this.actionElement_.removeEventListener('click', this.actionHandler_);
@@ -2881,7 +2881,7 @@ MaterialTextfield.prototype['checkDisabled'] = MaterialTextfield.prototype.check
   * @public
   */
 MaterialTextfield.prototype.checkFocus = function () {
-    if (Boolean(this.element_.querySelector(':focus'))) {
+    if ((this.element_.querySelector(':focus'))) {
         this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
     } else {
         this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
