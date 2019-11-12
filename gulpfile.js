@@ -116,7 +116,6 @@ var jsTasks = lazypipe()
 	.pipe(optimizejs)
 	//.pipe(rename, {suffix: '.min'})
 	.pipe(uglify)
-	.pipe(optimizejs)
 	.pipe(header, banner.main, {package: package})
 	.pipe(dest, paths.scripts.output);
 
@@ -244,13 +243,19 @@ var updateAssetVersion = function (done) {
 		.pipe(dest(paths.output));
 };
 // updates version in SW
+var swTasks = lazypipe()
+	.pipe(optimizejs)
+	.pipe(uglify)
+	.pipe(header, banner.main, {package: package})
+	.pipe(dest, paths.output);
+
 var buildSW = function (done) {
 	return src('src/sw.js')
 		.pipe(hashsrc({build_dir:paths.output,src_path:"src",hash_len:"6",query_name:"v",exts:[".json",".webp",".jpg",".css",".png",".ico",".js"],
 			regex:/\s*(?:(")([^"]*)|(')([^']*))/ig,
 			analyze: function analyze(match){return {prefix: "'",link:match[4],suffix: ''};}
 		}))
-		.pipe(jsTasks())
+		.pipe(swTasks())
 		.pipe(dest(paths.output));
 };
 // Watch for changes to the src directory
