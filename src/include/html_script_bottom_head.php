@@ -11,6 +11,7 @@ readfile("js/sparabetyg.js");
 readfile("js/smallScript.js");
 echo "
 $(document).ready(function() {
+	laddaBetyg();
 	$('select').material_select();
 });
 
