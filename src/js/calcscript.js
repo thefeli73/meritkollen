@@ -2,11 +2,11 @@ $(document).ready(function() {
 	$('form').change(function() {
 		raknaUtMeritvarde();
 	});
-	$('.add_row').live('click', function() {
+	$(document).on('click','.add_row', function() {
 		$('div.sample_row > div').clone().appendTo('form.courses');
 		raknaUtMeritvarde();
 	});
-	$('.delete_row').live('click', function() {
+	$(document).on('click','.delete_row', function() {
 		$(this).parent().slideUp(function() {
 			$(this).remove();
 			raknaUtMeritvarde();
