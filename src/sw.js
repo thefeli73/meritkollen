@@ -2,6 +2,7 @@ importScripts('/cache-polyfill.js');
 
 
 self.addEventListener('install', function(e) {
+ self.skipWaiting();
  e.waitUntil(
    caches.open('meritkollen').then(function(cache) {
      return cache.addAll([
