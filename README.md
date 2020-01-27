@@ -3,4 +3,5 @@ En enkel meritkalkylator
 
 
 ## Link
-https://meritkollen.se/
+Release: https://meritkollen.se/
+Development: https://dev.meritkollen.se/
